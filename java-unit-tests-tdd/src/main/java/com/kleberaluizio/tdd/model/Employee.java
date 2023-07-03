@@ -1,6 +1,7 @@
 package com.kleberaluizio.tdd.model;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.time.LocalDate;
 
 public class Employee {
@@ -25,6 +26,10 @@ public class Employee {
 
 	public BigDecimal getSalary() {
 		return salary;
+	}
+
+	public void readjustSalary(BigDecimal readjust){
+		this.salary = getSalary().add(readjust).setScale(2, RoundingMode.HALF_UP);
 	}
 
 }
