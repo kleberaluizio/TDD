@@ -9,19 +9,8 @@ public class AdjustmentService {
 
     public void grantAdjustment(Employee employee, Performance performance){
 
-        BigDecimal adjustment;
-        switch (performance){
-            case NOT_GOOD:
-                adjustment = employee.getSalary().multiply(new BigDecimal("0.03"));
-                employee.readjustSalary(adjustment);
-                break;
-            case GOOD:
-                adjustment = employee.getSalary().multiply(new BigDecimal("0.15"));
-                employee.readjustSalary(adjustment);
-                break;
-            case GREAT:
-                adjustment = employee.getSalary().multiply(new BigDecimal("0.20"));
-                employee.readjustSalary(adjustment);
-        }
+        BigDecimal percentage = performance.adjustmentPercentage();
+        BigDecimal adjustment = employee.getSalary().multiply(percentage);
+        employee.readjustSalary(adjustment);
     }
 }
