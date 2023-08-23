@@ -7,8 +7,7 @@ This project was developed with the goal of understanding and applying Test Driv
 
 
 # Design Orientado por Testes e Testes Unitários
-Este projeto foi desenvolvido com o objetivo de compreender e aplicar o Design Orientado por Testes (TDD) e Testes Unitários.
+Este projeto foi desenvolvido com o objetivo de compreender e aplicar o Design Orientado por Testes (TDD) e Testes Unitários. Assim, foi desenvolvido sistema de aumento salarial baseado na performance dos funcionários.
 
 > Durante o desenvolvimento deste código, o Design Orientado por Testes (TDD) me proporcionou a seguinte mentalidade: Priorizar a definição do comportamento desejado do código antes de focar nos detalhes de implementação. Adquiri uma compreensão mais profunda da importância dos testes e melhoria minha capacidade em determinar quando os testes são necessários.
 
-Este projeto em Java tem como objetivo aplicar os conceitos de TDD e Testes unitários em um sistema de aumento salarial baseado na performance dos funcionários.
